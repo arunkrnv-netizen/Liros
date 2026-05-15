@@ -36,10 +36,10 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden" style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif" }}>
       {/* Navbar */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'py-2' : 'py-4'}`}>
+      <nav className={`absolute top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'py-2' : 'py-4'}`}>
         <div className={`mx-4 md:mx-8 rounded-2xl transition-all duration-500 ${scrolled ? 'bg-white/85 backdrop-blur-xl shadow-lg shadow-black/5 border border-white/60' : 'bg-white/40 backdrop-blur-md border border-white/30'}`}>
           <div className="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
-            <img src="/logo.png" alt="Liros Solution" className="h-9 object-contain" />
+            <img src="/Liros.png" alt="Liros Solution" className="h-9 object-contain" />
             <button className="flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md shadow-emerald-200 hover:shadow-emerald-300 hover:scale-105 transition-all duration-200">
               Explore <ChevronRight size={15} />
             </button>
@@ -95,12 +95,12 @@ export default function App() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed mb-10 font-medium">
-            Liros Solution is preparing a fresh new experience focused on discovery, careers, travel, and modern digital platforms.
+            Liros Solutions is preparing a fresh new AI-powered experience focused on e-commerce, careers, travel, and modern digital platforms.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg shadow-emerald-200 hover:shadow-xl hover:shadow-emerald-300 hover:scale-105 transition-all duration-200 text-base">
-              Discover Our Platforms <ArrowRight size={17} />
+              Explore Our Platforms <ArrowRight size={17} />
             </button>
             <button className="flex items-center justify-center gap-2 bg-white border border-gray-200 text-gray-700 font-semibold px-8 py-4 rounded-2xl shadow-sm hover:shadow-md hover:border-emerald-300 hover:text-emerald-600 transition-all duration-200 text-base">
               Learn More
@@ -109,7 +109,7 @@ export default function App() {
 
           {/* Stats */}
           <div className="mt-16 grid grid-cols-3 gap-6 max-w-lg mx-auto">
-            {[['2016', 'Founded'], ['3+', 'Platforms'], ['India', 'Focused']].map(([val, label]) => (
+            {[['2016', 'Founded'], ['3+', 'Platforms'], ['Global', 'Focused']].map(([val, label]) => (
               <div key={label} className="flex flex-col items-center">
                 <span className="text-2xl font-extrabold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">{val}</span>
                 <span className="text-xs text-gray-400 font-medium mt-1">{label}</span>
@@ -132,7 +132,7 @@ export default function App() {
           <div className="text-center mb-16">
             <span className="text-xs font-bold text-emerald-600 tracking-widest uppercase">Our Platforms</span>
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mt-3 mb-4 tracking-tight">Three platforms. One mission.</h2>
-            <p className="text-gray-400 text-lg max-w-xl mx-auto font-medium">Smarter digital experiences built for everyday Indian users.</p>
+            <p className="text-gray-400 text-lg max-w-xl mx-auto font-medium">Smarter digital experiences built for everyday users.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
@@ -142,16 +142,16 @@ export default function App() {
               <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full blur-xl" style={{ background: 'radial-gradient(circle, rgba(196,181,253,0.18) 0%, rgba(147,197,253,0.1) 100%)' }} />
               <div className="relative z-10">
                 <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 shadow-md group-hover:scale-110 transition-transform duration-300" style={{ background: 'linear-gradient(135deg, #ede9fe, #eff6ff)', border: '1px solid rgba(167,139,250,0.3)' }}>
-                  <img src="/Screenshot_2026-05-15_132538.png" alt="Yoursearch.in" className="w-11 h-11 object-contain" />
+                  <img src="/Yourseach.png" alt="Yoursearch.in" className="w-20 h-20 object-contain" />
                 </div>
                 <div className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full mb-3" style={{ background: 'rgba(167,139,250,0.15)', color: '#7c3aed' }}>
                   <Search size={11} /> Discovery
                 </div>
-                <h3 className="text-xl font-extrabold text-gray-900 mb-1">Yoursearch.in</h3>
+                <h3 className="text-xl font-extrabold text-gray-900 mb-1">Yoursearch</h3>
                 <p className="font-semibold text-sm mb-3" style={{ color: '#7c3aed' }}>Your partner for search</p>
-                <p className="text-gray-500 text-sm leading-relaxed">A smarter discovery platform designed to help users explore faster and better.</p>
+                <p className="text-gray-500 text-sm leading-relaxed">An AI-powered discovery ecosystem for price comparison, classifieds, news, and digital exploration.</p>
                 <div className="mt-5 flex items-center gap-1.5 text-sm font-semibold group-hover:gap-3 transition-all duration-200" style={{ color: '#7c3aed' }}>
-                  Coming soon <ArrowRight size={14} />
+                  Relaunching soon <ArrowRight size={14} />
                 </div>
               </div>
             </div>
@@ -162,16 +162,16 @@ export default function App() {
               <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full blur-xl" style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.18) 0%, rgba(125,211,252,0.1) 100%)' }} />
               <div className="relative z-10">
                 <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 shadow-md group-hover:scale-110 transition-transform duration-300" style={{ background: 'linear-gradient(135deg, #dbeafe, #e0f2fe)', border: '1px solid rgba(96,165,250,0.3)' }}>
-                  <img src="/f-logo.png" alt="New Sarkari Jobs" className="w-11 h-11 object-contain" />
+                  <img src="/Newsarkarijobs.png" alt="New Sarkari Jobs" className="w-24 h-24 object-contain" />
                 </div>
                 <div className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full mb-3" style={{ background: 'rgba(96,165,250,0.15)', color: '#1d4ed8' }}>
                   <Briefcase size={11} /> Careers
                 </div>
                 <h3 className="text-xl font-extrabold text-gray-900 mb-1">New Sarkari Jobs</h3>
                 <p className="font-semibold text-sm mb-3" style={{ color: '#1d4ed8' }}>A place to build your career</p>
-                <p className="text-gray-500 text-sm leading-relaxed">Helping users discover career opportunities and important government job updates.</p>
+                <p className="text-gray-500 text-sm leading-relaxed">An intelligent career platform delivering smarter government job discovery, updates, and opportunities.</p>
                 <div className="mt-5 flex items-center gap-1.5 text-sm font-semibold group-hover:gap-3 transition-all duration-200" style={{ color: '#1d4ed8' }}>
-                  Coming soon <ArrowRight size={14} />
+                  Relaunching soon <ArrowRight size={14} />
                 </div>
               </div>
             </div>
@@ -182,14 +182,14 @@ export default function App() {
               <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full blur-xl" style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.18) 0%, rgba(56,189,248,0.1) 100%)' }} />
               <div className="relative z-10">
                 <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 shadow-md group-hover:scale-110 transition-transform duration-300 overflow-hidden" style={{ background: 'linear-gradient(135deg, #fff7ed, #fef3c7)', border: '1px solid rgba(251,146,60,0.3)' }}>
-                  <img src="/Mytripezee_Logo.jpg" alt="myTripezee" className="w-14 h-14 object-cover" />
+                  <img src="/Mytripezee_Logo.jpg" alt="myTripezee" className="w-11 h-11 object-cover" />
                 </div>
                 <div className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full mb-3" style={{ background: 'rgba(251,146,60,0.15)', color: '#c2410c' }}>
                   <MapPin size={11} /> Travel
                 </div>
-                <h3 className="text-xl font-extrabold text-gray-900 mb-1">myTripezee</h3>
+                <h3 className="text-xl font-extrabold text-gray-900 mb-1">My Trip Ezee</h3>
                 <p className="font-semibold text-sm mb-3" style={{ color: '#c2410c' }}>Explore Life</p>
-                <p className="text-gray-500 text-sm leading-relaxed">A travel-focused platform helping users discover smarter journeys and experiences.</p>
+                <p className="text-gray-500 text-sm leading-relaxed">An AI-powered modern platform helping users discover smarter journeys, experiences, and destinations.</p>
                 <div className="mt-5 flex items-center gap-1.5 text-sm font-semibold group-hover:gap-3 transition-all duration-200" style={{ color: '#c2410c' }}>
                   Coming soon <ArrowRight size={14} />
                 </div>
@@ -215,19 +215,19 @@ export default function App() {
               <span className="text-xs font-bold text-emerald-600 tracking-widest uppercase">About Us</span>
               <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mt-3 mb-6 leading-tight tracking-tight">
                 About<br />
-                <span className="bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent">Liros Solution</span>
+                <span className="bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent">Liros Solutions</span>
               </h2>
               <p className="text-gray-500 text-base leading-relaxed mb-5 font-medium">
-                Founded in 2016, Liros Solution is a privately held digital platforms company focused on discovery, careers, travel, and modern online experiences.
+                Founded in 2016, Liros Solutions is a privately held digital platforms company focused on e-commerce discovery, careers, travel, and modern online experiences.
               </p>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Through platforms like Yoursearch.in, New Sarkari Jobs, and myTripezee.com, we aim to create digital experiences that feel simple, useful, connected, and accessible for everyday users.
+                Through platforms like Yoursearch, New Sarkari Jobs, and My Trip Ezee, we aim to create digital experiences that feel simple, useful, connected, and accessible for everyday users.
               </p>
               <div className="mt-8 grid grid-cols-3 gap-3">
                 {[
                   { val: '2016', label: 'Year Founded', from: '#ecfdf5', to: '#d1fae5', border: '#6ee7b7', color: '#059669' },
                   { val: '3+', label: 'Platforms', from: '#eff6ff', to: '#dbeafe', border: '#93c5fd', color: '#2563eb' },
-                  { val: 'India', label: 'Focused', from: '#fff7ed', to: '#fed7aa', border: '#fdba74', color: '#ea580c' },
+                  { val: 'Global', label: 'Focused', from: '#fff7ed', to: '#fed7aa', border: '#fdba74', color: '#ea580c' },
                 ].map(({ val, label, from, to, border, color }) => (
                   <div key={label} className="rounded-2xl p-4 text-center" style={{ background: `linear-gradient(135deg, ${from}, ${to})`, border: `1px solid ${border}40` }}>
                     <div className="text-2xl font-extrabold" style={{ color }}>{val}</div>
@@ -242,9 +242,9 @@ export default function App() {
                 <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full bg-gradient-to-br from-emerald-400/20 to-teal-400/15 blur-xl" />
                 <div className="space-y-4">
                   {[
-                    { icon: Search, label: 'Yoursearch.in', desc: 'Smarter discovery', bg: '#f5f3ff', iconBg: '#ede9fe', iconColor: '#7c3aed' },
-                    { icon: Briefcase, label: 'New Sarkari Jobs', desc: 'Career opportunities', bg: '#eff6ff', iconBg: '#dbeafe', iconColor: '#1d4ed8' },
-                    { icon: MapPin, label: 'myTripezee', desc: 'Travel experiences', bg: '#fff7ed', iconBg: '#ffedd5', iconColor: '#ea580c' },
+                    { icon: Search, label: 'Yoursearch', desc: 'Smart Discovery Ecosystem', bg: '#f5f3ff', iconBg: '#ede9fe', iconColor: '#7c3aed' },
+                    { icon: Briefcase, label: 'New Sarkari Jobs', desc: 'Modern Career Platform', bg: '#eff6ff', iconBg: '#dbeafe', iconColor: '#1d4ed8' },
+                    { icon: MapPin, label: 'My Trip Ezee', desc: 'Smart Travel Platform', bg: '#fff7ed', iconBg: '#ffedd5', iconColor: '#ea580c' },
                   ].map(({ icon: Icon, label, desc, bg, iconBg, iconColor }) => (
                     <div key={label} className="flex items-center gap-4 p-4 rounded-2xl hover:scale-[1.02] transition-transform duration-200" style={{ background: bg }}>
                       <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: iconBg }}>
@@ -258,7 +258,7 @@ export default function App() {
                   ))}
                 </div>
                 <div className="mt-5 p-4 rounded-2xl text-center" style={{ background: 'linear-gradient(135deg, #10b981, #14b8a6)' }}>
-                  <div className="font-bold text-sm text-white">Building for Bharat</div>
+                  <div className="font-bold text-sm text-white">Built For Global Digital Experiences</div>
                   <div className="text-emerald-100 text-xs mt-0.5">Simple. Useful. Accessible.</div>
                 </div>
               </div>
@@ -283,7 +283,7 @@ export default function App() {
           className={`relative z-10 max-w-3xl mx-auto text-center transition-all duration-1000 ${relaunch.inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
         >
           <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/25 text-white text-sm font-semibold px-4 py-2 rounded-full mb-6">
-            <Sparkles size={14} /> Exciting news
+            <Sparkles size={14} /> A New Chapter
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-5 tracking-tight">
             Something exciting<br />is taking shape.
@@ -292,7 +292,7 @@ export default function App() {
             A refreshed digital experience is arriving soon. Stay tuned.
           </p>
           <button className="inline-flex items-center justify-center gap-2 bg-white text-emerald-700 font-bold px-9 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-200 text-base">
-            <Mail size={17} /> Notify Me
+            <Mail size={17} /> Get Updates
           </button>
         </div>
       </section>
@@ -302,16 +302,16 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-start justify-between gap-10 mb-10">
             <div>
-              <img src="/logo.png" alt="Liros Solution" className="h-9 object-contain brightness-0 invert mb-4" />
-              <p className="text-gray-400 text-sm max-w-xs leading-relaxed">Building smarter digital platforms for everyday Indian users since 2016.</p>
+              <img src="/Liros.png" alt="Liros Solution" className="h-9 object-contain brightness-0 invert mb-4" />
+              <p className="text-gray-400 text-sm max-w-xs leading-relaxed">Building smarter digital platforms for everyday users since 2016.</p>
             </div>
             <div className="grid grid-cols-2 gap-10">
               <div>
                 <p className="text-xs font-bold text-gray-500 tracking-widest uppercase mb-4">Platforms</p>
                 <ul className="space-y-3 text-sm">
                   <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">Yoursearch.in</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">New Sarkari Jobs</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">myTripezee</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">Newsarkarijobs.com</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">mytripezee.com</a></li>
                 </ul>
               </div>
               <div>
@@ -325,8 +325,8 @@ export default function App() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
-            <span>© 2026 Liros Solution. All rights reserved.</span>
-            <span>Made with care in India</span>
+            <span>© 2026 Liros Solutions Pvt. Ltd. All rights reserved.</span>
+            <span></span>
           </div>
         </div>
       </footer>
