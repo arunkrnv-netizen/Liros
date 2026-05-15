@@ -303,7 +303,7 @@ export default function App() {
           <div className="flex flex-col md:flex-row items-start justify-between gap-10 mb-10">
             <div>
               <img src="/Liros.png" alt="Liros Solution" className="h-9 object-contain brightness-0 invert mb-4" />
-              <p className="text-gray-400 text-sm max-w-xs leading-relaxed">Building smarter digital platforms for everyday users since 2016.</p>
+              <p className="text-gray-400 text-sm max-w-xs leading-relaxed">Building Digital Experiences.</p>
             </div>
             <div className="grid grid-cols-2 gap-10">
               <div>
