@@ -309,9 +309,11 @@ export default function App() {
               <div>
                 <p className="text-xs font-bold text-gray-500 tracking-widest uppercase mb-4">Platforms</p>
                 <ul className="space-y-3 text-sm">
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">Yoursearch.in</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">Newsarkarijobs.com</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-150">mytripezee.com</a></li>
+                <li><a href="https://yoursearch.in" target="_blank" className="text-gray-400 hover:text-white transition-colors duration-150">Yoursearch.in</a></li>
+
+                 <li><a href="https://newsarkarijobs.com" target="_blank" className="text-gray-400 hover:text-white transition-colors duration-150">Newsarkarijobs.com</a></li>
+
+                 <li><a href="https://mytripezee.com" target="_blank" className="text-gray-400 hover:text-white transition-colors duration-150">mytripezee.com</a></li>
                 </ul>
               </div>
               <div>
