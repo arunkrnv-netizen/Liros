@@ -116,14 +116,7 @@ export default function App() {
 >
               Explore Our Platforms <ArrowRight size={17} />
             </button>
-            <button
-  onClick={() => {
-    document.getElementById("platforms")?.scrollIntoView({
-      behavior: "smooth",
-    });
-  }}
-  className="flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-8 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
->
+            <button className="flex items-center justify-center gap-2 bg-white border border-gray-200 text-gray-700 font-semibold px-8 py-4 rounded-2xl shadow-sm hover:shadow-md hover:border-emerald-300 hover:text-emerald-600 transition-all duration-200 text-base">
               Learn More
             </button>
           </div>
@@ -221,7 +214,7 @@ export default function App() {
       </section>
 
       {/* About Section */}
-      <section id="platforms" className="relative py-24 px-6 overflow-hidden">
+      <section className="relative py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute w-[500px] h-[400px] rounded-full bg-gradient-to-br from-teal-100/40 to-emerald-100/25 blur-3xl -bottom-20 -right-20" />
           <div className="absolute w-[300px] h-[300px] rounded-full bg-gradient-to-br from-sky-100/30 to-blue-100/20 blur-2xl top-10 left-5" />
