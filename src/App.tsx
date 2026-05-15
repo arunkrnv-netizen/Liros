@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { X, ChevronRight, MapPin, Briefcase, Search, Sparkles, ArrowRight, Mail, Shield, FileText } from 'lucide-react';
+import { X, ChevronRight, Globe, ChevronDown, MapPin, Briefcase, Search, Sparkles, ArrowRight, Mail, Shield, FileText } from 'lucide-react';
 
 function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
@@ -39,10 +39,17 @@ export default function App() {
       <nav className={`absolute top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'py-2' : 'py-4'}`}>
         <div className={`mx-4 md:mx-8 rounded-2xl transition-all duration-500 ${scrolled ? 'bg-white/85 backdrop-blur-xl shadow-lg shadow-black/5 border border-white/60' : 'bg-white/40 backdrop-blur-md border border-white/30'}`}>
           <div className="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
-            <img src="/Liros.png" alt="Liros Solution" className="h-9 object-contain" />
-            <button className="flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md shadow-emerald-200 hover:shadow-emerald-300 hover:scale-105 transition-all duration-200">
-              Explore <ChevronRight size={15} />
-            </button>
+          <div className="flex items-center gap-6">
+  <img src="/Liros.png" alt="Liros Solution" className="h-9 object-contain" />
+   <div className="flex items-center gap-2 text-sm text-gray-700 cursor-pointer hover:text-black transition-colors">
+    <Globe size={18} />
+    <span>Global (EN)</span>
+    <ChevronDown size={16} />
+  </div>
+</div>
+<button className="flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm px-5 py-2 rounded-xl">
+  Explore <ChevronRight size={15} />
+</button>
           </div>
         </div>
       </nav>
