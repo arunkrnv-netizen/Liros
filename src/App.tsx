@@ -218,7 +218,7 @@ export default function App() {
                 <span className="bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent">Liros Solutions</span>
               </h2>
               <p className="text-gray-500 text-base leading-relaxed mb-5 font-medium">
-                Founded in 2016, Liros Solutions is a privately held digital platforms company focused on e-commerce discovery, careers, travel, and modern online experiences.
+              Liros Solutions is a privately held digital platforms company focused on e-commerce discovery, careers, travel, and modern online experiences. The company ceased operations in 2021 and is currently not operational.
               </p>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Through platforms like Yoursearch, New Sarkari Jobs, and My Trip Ezee, we aim to create digital experiences that feel simple, useful, connected, and accessible for everyday users.
