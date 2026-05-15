@@ -50,7 +50,7 @@ export default function App() {
 <button
   onClick={() => {
     document.getElementById("learn-more")?.scrollIntoView({
-      behavior: "smooth",
+      behavior: "smooth"
     });
   }}
   className="flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm px-5 py-2 rounded"
