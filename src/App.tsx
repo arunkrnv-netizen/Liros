@@ -124,7 +124,7 @@ export default function App() {
   }}
   className="flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-8 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
 >
-              Learn More 
+              Learn More
             </button>
           </div>
 
