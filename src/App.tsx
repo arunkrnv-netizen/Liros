@@ -221,7 +221,7 @@ export default function App() {
       </section>
 
       {/* About Section */}
-      <section id="about"className="relative py-24 px-6 overflow-hidden">
+      <section id="about" className="relative py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute w-[500px] h-[400px] rounded-full bg-gradient-to-br from-teal-100/40 to-emerald-100/25 blur-3xl -bottom-20 -right-20" />
           <div className="absolute w-[300px] h-[300px] rounded-full bg-gradient-to-br from-sky-100/30 to-blue-100/20 blur-2xl top-10 left-5" />
