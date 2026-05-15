@@ -47,7 +47,7 @@ export default function App() {
     <ChevronDown size={16} />
   </div>
 </div>
-<button
+< button
   onClick={() => {
     document.getElementById("about")?.scrollIntoView({
       behavior: "smooth",
