@@ -32,7 +32,7 @@ export default function App() {
   const platforms = useInView(0.1);
   const relaunch = useInView(0.1);
   const about = useInView(0.1);
-
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <div className="min-h-screen bg-white overflow-x-hidden" style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif" }}>
       {/* Navbar */}
@@ -298,9 +298,12 @@ export default function App() {
           <p className="text-emerald-100 text-lg font-medium mb-10 max-w-lg mx-auto leading-relaxed">
             A refreshed digital experience is arriving soon. Stay tuned.
           </p>
-          <button className="inline-flex items-center justify-center gap-2 bg-white text-emerald-700 font-bold px-9 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-200 text-base">
-            <Mail size={17} /> Get Updates
-          </button>
+          <button
+          onClick={() => setShowPopup(true)}
+           className="inline-flex items-center justify-center gap-2 bg-white text-emerald-700 font-bold px-9 py-4 rounded-2xl shadow-xl hover:scale-105 transition-all duration-300"
+>           <Mail size={17} />
+           Get Updates
+            </button>
         </div>
       </section>
 
@@ -365,6 +368,39 @@ export default function App() {
           </div>
         </div>
       )}
-    </div>
+          {showPopup && (
+        <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="bg-white rounded-3xl p-8 w-[90%] max-w-md shadow-2xl relative">
+      
+            <button
+              onClick={() => setShowPopup(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-black"
+            >
+              <X size={20} />
+            </button>
+      
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              Stay Updated
+            </h2>
+      
+            <p className="text-gray-500 mb-6">
+              Enter your email to receive updates about the relaunch.
+            </p>
+      
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-500 mb-4"
+            />
+      
+            <button className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white py-3 rounded-xl font-semibold">
+              Subscribe
+            </button>
+      
+          </div>
+        </div>
+      )}
+       </div>
   );
+  
 }
