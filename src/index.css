@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Blob animations ── */
+@keyframes liros-blob-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(30px, -25px) scale(1.05); }
+  66%       { transform: translate(-20px, 20px) scale(0.97); }
+}
+
+.liros-blob-1 { animation: liros-blob-drift 12s ease-in-out infinite; }
+.liros-blob-2 { animation: liros-blob-drift 16s ease-in-out infinite reverse; animation-delay: -4s; }
+.liros-blob-3 { animation: liros-blob-drift 10s ease-in-out infinite; animation-delay: -7s; }
+
+/* ── Floating shapes ── */
+@keyframes liros-float-slow {
+  0%, 100% { transform: translateY(0px) rotate(12deg); }
+  50%       { transform: translateY(-18px) rotate(16deg); }
+}
+@keyframes liros-float-med {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50%       { transform: translateY(-12px) rotate(5deg); }
+}
+@keyframes liros-float-fast {
+  0%, 100% { transform: translateY(0px) rotate(45deg); }
+  50%       { transform: translateY(-8px) rotate(50deg); }
+}
+
+.liros-float-slow { animation: liros-float-slow 6s ease-in-out infinite; }
+.liros-float-med  { animation: liros-float-med  4s ease-in-out infinite; }
+.liros-float-fast { animation: liros-float-fast 3s ease-in-out infinite; }
+
+/* ── Particle pulse ── */
+@keyframes liros-particle-pulse {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50%       { opacity: 0.7; transform: scale(1.6); }
+}
+
+.liros-particle { animation: liros-particle-pulse 3.5s ease-in-out infinite; }
+
+/* ── Smooth scroll ── */
+html { scroll-behavior: smooth; }
+
+/* ── Global font ── */
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; -webkit-font-smoothing: antialiased; }
