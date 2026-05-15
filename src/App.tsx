@@ -48,7 +48,7 @@ export default function App() {
   </div>
 </div>
 <button className="flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm px-5 py-2 rounded-xl">
-  Know More <ChevronRight size={15} />
+  About Us <ChevronRight size={15} />
 </button>
           </div>
         </div>
