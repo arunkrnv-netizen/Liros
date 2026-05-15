@@ -340,7 +340,7 @@ export default function App() {
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-gray-800 text-sm font-bold mb-1">We use cookies</p>
-              <p className="text-gray-400 text-xs leading-relaxed">We use cookies to improve your experience. By continuing, you agree to our <a href="#" className="text-emerald-600 underline">cookie policy</a>.</p>
+              <p className="text-gray-400 text-xs leading-relaxed">We use cookies to improve your experience. By continuing, you agree to our <a href="/cookie-policy.html" className="underline">cookie policy</a></p>
               <div className="flex gap-2 mt-3">
                 <button onClick={() => setCookieDismissed(true)} className="text-white text-xs font-bold px-4 py-2 rounded-xl hover:scale-105 transition-transform duration-150" style={{ background: 'linear-gradient(135deg, #10b981, #14b8a6)' }}>
                   Accept All
