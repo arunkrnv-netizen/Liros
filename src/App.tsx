@@ -49,7 +49,7 @@ export default function App() {
 </div>
 <button
   onClick={() => {
-    document.getElementById("about")?.scrollIntoView({
+    document.getElementById("learn-more")?.scrollIntoView({
       behavior: "smooth",
     });
   }}
@@ -289,7 +289,7 @@ export default function App() {
       </section>
 
       {/* Relaunch Section */}
-      <section className="relative py-28 px-6 overflow-hidden">
+      <section id="learn-more" className="relative py-28 px-6 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #059669 0%, #0d9488 50%, #0891b2 100%)' }} />
           <div className="liros-blob-2 absolute w-[600px] h-[400px] rounded-full bg-white/5 blur-3xl top-0 right-0" />
