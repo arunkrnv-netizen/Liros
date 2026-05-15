@@ -393,9 +393,15 @@ export default function App() {
               className="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-500 mb-4"
             />
       
-            <button className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white py-3 rounded-xl font-semibold">
-              Subscribe
-            </button>
+            <button
+  onClick={() => {
+    alert("Thanks for subscribing!");
+    setShowPopup(false);
+  }}
+  className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white py-3 rounded-xl font-semibold"
+>
+Subscribe
+</button>
       
           </div>
         </div>
