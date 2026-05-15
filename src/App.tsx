@@ -106,7 +106,14 @@ export default function App() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg shadow-emerald-200 hover:shadow-xl hover:shadow-emerald-300 hover:scale-105 transition-all duration-200 text-base">
+          <button
+  onClick={() => {
+    document.getElementById("platforms")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }}
+  className="flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-8 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+>
               Explore Our Platforms <ArrowRight size={17} />
             </button>
             <button className="flex items-center justify-center gap-2 bg-white border border-gray-200 text-gray-700 font-semibold px-8 py-4 rounded-2xl shadow-sm hover:shadow-md hover:border-emerald-300 hover:text-emerald-600 transition-all duration-200 text-base">
@@ -127,7 +134,7 @@ export default function App() {
       </section>
 
       {/* Platforms Section */}
-      <section className="relative py-24 px-6 bg-gradient-to-b from-white via-gray-50/60 to-white overflow-hidden">
+      <section id="platforms" className="relative py-24 px-6 bg-gradient-to-b from-white via-gray-50/60 to-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute w-[700px] h-[300px] rounded-full bg-gradient-to-r from-emerald-100/50 to-teal-100/30 blur-3xl top-0 left-1/2 -translate-x-1/2" />
         </div>
