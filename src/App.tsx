@@ -113,23 +113,17 @@ export default function App() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-             <button
+          <button
   onClick={() => {
     document.getElementById("platforms")?.scrollIntoView({
       behavior: "smooth",
     });
   }}
-  
   className="flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-8 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
 >
               Explore Our Platforms <ArrowRight size={17} />
-              <button
-  onClick={() => {
-    document.getElementById("learn-more")?.scrollIntoView({
-      behavior: "smooth",
-    });
-  }}
-        className="flex items-center justify-center gap-2 bg-white border border-gray-200 text-gray-700 font-semibold px-8 py-4 rounded-2xl shadow-sm hover:shadow-md hover:border-emerald-300 hover:text-emerald-600 transition-all duration-200 text-base">
+            </button>
+            <button className="flex items-center justify-center gap-2 bg-white border border-gray-200 text-gray-700 font-semibold px-8 py-4 rounded-2xl shadow-sm hover:shadow-md hover:border-emerald-300 hover:text-emerald-600 transition-all duration-200 text-base">
               Learn More
             </button>
           </div>
