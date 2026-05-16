@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { X, ChevronRight, Globe, ChevronDown, MapPin, Briefcase, Search, Sparkles, ArrowRight, Mail, Shield, FileText } from 'lucide-react';
+import { X, ChevronRight, Globe, ChevronDown, MapPin, Briefcase, Search, Sparkles, ArrowRight, Mail, Shield, FileText, Instagram, Facebook, Twitter, Youtube, Linkedin } from 'lucide-react';
 
 function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
@@ -332,8 +332,19 @@ export default function App() {
           <div className="flex flex-col md:flex-row items-start justify-between gap-10 mb-10">
             <div>
               <img src="/Liros.png" alt="Liros Solution" className="h-9 object-contain brightness-0 invert mb-4" />
-              <p className="text-gray-400 text-sm max-w-xs leading-relaxed">Building Digital Experiences.</p>
-            </div>
+              <p className="text-gray-400 text-sm max-w-xs leading-relaxed">Building Smarter Digital Experiences.</p>
+              <div>
+  <p className="text-gray-400 text-sm max-w-xs leading-relaxed">
+  </p>
+
+  <div className="flex gap-4 mt-4">
+    <Facebook size={20} />
+    <Instagram size={20} />
+    <Twitter size={20} />
+    <Youtube size={20} />
+    <Linkedin size={20} />
+  </div>
+</div></div>
             <div className="grid grid-cols-2 gap-10">
               <div>
                 <p className="text-xs font-bold text-gray-500 tracking-widest uppercase mb-4">Platforms</p>
